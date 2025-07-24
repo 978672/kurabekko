@@ -3,7 +3,15 @@ let capa1 = document.getElementById("capacity1");
 let kakaku2 = document.getElementById("kakaku2");
 let capa2 = document.getElementById("capacity2");
 
+
 function calculateResult() {
+  if(kakaku1.value === "" || kakaku2.value === ""){
+    alert("どっちかの価格が空です");
+    return;
+  }else if(capa1.value === "" || capa2.value === ""){
+    alert("どっちかの内容量が空です");
+    return;
+  }
   const res1 = Math.round((capa1.value / kakaku1.value) * 100000) / 100000;
   const res2 = Math.round((capa2.value / kakaku2.value) * 100000) / 100000;
 
