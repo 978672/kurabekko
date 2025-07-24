@@ -4,11 +4,9 @@ let kakaku2 = document.getElementById("kakaku2");
 let capa2 = document.getElementById("capacity2");
 
 function calculateResult() {
-  // console.log([kakaku1.value, capa1.value]);
   const res1 = Math.round((capa1.value / kakaku1.value) * 100000) / 100000;
   const res2 = Math.round((capa2.value / kakaku2.value) * 100000) / 100000;
 
-  // console.log([res1, res2]);
   //取得
   let displayRes1 = document.getElementById("res1");
   displayRes1.textContent = res1;
@@ -25,7 +23,7 @@ function calculateResult() {
     displayLeft.style.backgroundColor = "#C0C0C0";
     displayRight.style.backgroundColor = "#FFCCCC";
     let sign = document.getElementById("sign2");
-    sign.textContent = "‼安い";
+    sign.textContent = "!!安い!!";
     sign.style.color = "red";
     let preSign = document.getElementById("sign1");
     preSign.textContent = "";
@@ -33,7 +31,7 @@ function calculateResult() {
     displayLeft.style.backgroundColor = "#FFCCCC";
     displayRight.style.backgroundColor = "#C0C0C0";
     let sign = document.getElementById("sign1");
-    sign.textContent = "‼安い";
+    sign.textContent = "!!安い!!";
     sign.style.color = "red";
     let preSign = document.getElementById("sign2");
     preSign.textContent = "";
