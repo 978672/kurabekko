@@ -14,10 +14,13 @@ body {
 
 h1 {
   color: #333333;
+  margin-bottom: 0px;
+
 }
 
 p {
   color: #666666;
+  margin-top: 0px;
 }
 
  /* 親に box-sizing を徹底 */
@@ -29,7 +32,6 @@ p {
     display: flex;
     gap: 20px;
     justify-content: center;
-    flex-wrap: wrap;
   }
 
   #left, #right {
@@ -49,11 +51,46 @@ p {
     display: block;
   }
 
+  button {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  background-color: #6cf;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  }
+
+  input[type="submit"] {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    width: 30%;
+    background-color: rgb(247, 61, 61);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  #sign1, #sign2 {
+    text-align: center;
+    min-height: 1.5em;
+  } 
+
 /* Add more styles as needed */
 
 @media screen and (max-width: 480px) {
   /* Styles specific to screens with a maximum width of 480px (typical smartphones) */
   #wrapper {
     padding: 10px;
+  }
+
+  #left, #right {
+    /* border: solid 1px #b1b; */
+    padding: 20px;
+    width: 45%;
+    box-sizing: border-box;
   }
 }
