@@ -20,68 +20,34 @@ p {
   color: #666666;
 }
 
-.result {
-  max-width: 100%;
-  background-color: rgb(247, 202, 201, 0.45);
-  border: solid 0px #6091d3; /*邱・/
-  border-radius: 10px; /*隗偵・荳ｸ縺ｿ*/
-  /*   margin: 15px 0px;
-  padding: 3px 5px; */
-  box-shadow: 8px 8px 16px #b1b1b1, -8px -8px 16px #ffffff;
-}
+ /* 親に box-sizing を徹底 */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
 
-.result-red {
-  max-width: 100%;
-  background-color: rgb(231, 33, 33, 0.25);
-  border: solid 0px #6091d3; /*邱・/
-  border-radius: 10px; /*隗偵・荳ｸ縺ｿ*/
-  /*   margin: 15px 0px;
-  padding: 3px 5px; */
-  box-shadow: 8px 8px 16px #b1b1b1, -8px -8px 16px #ffffff;
-}
+  .container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
-.result-blue {
-  max-width: 100%;
-  background-color: rgb(85, 190, 238, 0.25);
-  border: solid 0px #6091d3; /*邱・/
-  border-radius: 10px; /*隗偵・荳ｸ縺ｿ*/
-  box-shadow: 8px 8px 16px #b1b1b1, -8px -8px 16px #ffffff;
-}
+  #left, #right {
+    border: solid 1px #b1b1b1;
+    padding: 20px;
+    width: 300px;
+    box-sizing: border-box;
+  }
 
-.color-red {
-  color: red;
-}
-
-.color-black {
-  color: black;
-}
-
-/*mercari page*/
-.moko {
-  border-radius: 35px;
-  background: #f2f2f2;
-  box-shadow: 8px 8px 16px #b1b1b1, -8px -8px 16px #ffffff;
-}
-
-.bg01 {
-  background: #f2f2f2;
-}
-
-/* icons */
-.content-center {
-  /*     height:100vh; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* margin-top: ; */
-}
-
-.content-center ul {
-  display: flex;
-  list-style: none;
-  padding-left: 0;
-  margin: 5px 0;
-}
+  input[type="tel"] {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+  }
 
 /* Add more styles as needed */
 
